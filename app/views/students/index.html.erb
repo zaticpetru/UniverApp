@@ -1,0 +1,14 @@
+<h4>All univer's students</h4>
+<table class="highlight">
+  <% @students.each do |student| %>
+    <tr>
+      <td class="card-panel">
+        <a href="#!" class="waves-effect waves-light"><%= "#{student.name}, email: #{student.email}"%></a>
+      </td>
+      <td class="card-action left">
+        <a href="#!" class="waves-effect waves-light btn">View Enrollments</a>
+        <a href="#!" class="waves-effect waves-light btn">Enrole</a>
+      </td>
+    </tr>
+  <% end %>
+</table>
